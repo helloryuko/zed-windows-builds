@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run:
+      run: |
         git clone git@github.com:zed-industries/zed.git
         cd zed
         cargo build --release --verbose
